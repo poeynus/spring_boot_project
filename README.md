@@ -31,3 +31,14 @@
 #### 6주차
 
     Paging & Regex & Test - Paging기법, 정규표현식, 실제 협업 개발 환경에 대한 이해 (Test, Dev 환경) 내용을 배웁니다.
+
+### 21.10.22 20:46
+
+    시작
+    TODO List 만들기를 따라하면서 기초 감 좀 잡기
+
+    - https://www.youtube.com/watch?v=hHRLN9j1kqI&ab_channel=%EC%96%BC%EC%91%A4ALLSSU
+
+    front - react
+    back - spring boot
+    db - mysql
