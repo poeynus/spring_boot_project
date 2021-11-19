@@ -30,3 +30,15 @@
     공식 문서 보면서 진행 중, 언어 습득은 3일안에 끝내기
     백엔드 개발은 7일 안에 어느정도 숙달 되게끔 하기
     - https://kotlinlang.org/docs/basic-syntax.html
+
+### 21.11.19
+
+    - application.yml 새롭게 생성
+    => docker, mariadb, spring boot 까지 연동 완료
+
+    docker 명령어
+    1. docker exec -it todo /bin/bash
+    2. mysql -u root -p
+
+    docker 간단한 명령어 참고
+    - https://7942yongdae.tistory.com/130
