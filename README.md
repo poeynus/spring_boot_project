@@ -42,3 +42,11 @@
 
     docker 간단한 명령어 참고
     - https://7942yongdae.tistory.com/130
+
+### 21.11.20
+
+    - 백엔드 완성
+    => Entity 생성, Column 설정
+    => CrudRepository를 사용하여 인터페이스 생성
+    => Sevice 생성, 삽입, 수정 삭제 등 여러가지 로직 작성
+    => Controller 생성, 각각에 해당하는 Mapping
