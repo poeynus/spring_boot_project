@@ -50,3 +50,10 @@
     => CrudRepository를 사용하여 인터페이스 생성
     => Sevice 생성, 삽입, 수정 삭제 등 여러가지 로직 작성
     => Controller 생성, 각각에 해당하는 Mapping
+    
+### 21.11.27
+
+    - Heroku && kotlin rest api 성공
+    => 한 5일 삽질 했던 거 같은데 드디어 성공
+    => 문제는 뭔가 우리가 개발하려던 것과 버전이 안 맞는 거 같음
+    => build.gradle과 build.gradle.kts의 차이인데 이거 그냥 바꿔서 써도 되는건가?
