@@ -1,59 +1,40 @@
-# 간단한 백엔드 예습 - 21.10.14
+# kotlin-getting-started
 
-### 21.10.22 20:46
+A barebones Kotlin app, which can easily be deployed to Heroku.
 
-    시작
-    TODO List 만들기를 따라하면서 기초 감 좀 잡기
+This application supports the [Getting Started with Kotlin on Heroku](https://devcenter.heroku.com/articles/getting-started-with-kotlin) article - check it out.
 
-    - https://www.youtube.com/watch?v=hHRLN9j1kqI&ab_channel=%EC%96%BC%EC%91%A4ALLSSU
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-    front - react
-    back - spring boot
-    db - maria
+## Running Locally
 
-### 21.11.11
+Make sure you have Java and Maven installed.  Also, install the [Heroku CLI](https://cli.heroku.com/).
 
-    진짜 시작
+```sh
+$ git clone https://github.com/heroku/kotlin-getting-started.git
+$ cd kotlin-getting-started
+$ mvn install
+$ heroku local:start
+```
 
-    - spring boot - kotlin으로 설치
-    => 스프링 이니셜라이저 사용 해서 만들고 open 했음
+Your app should now be running on [localhost:5000](http://localhost:5000/).
 
-    - db는 영상은 mysql쓰는데 나는 maria로 하려고 maria로 설치
-    => 내일 연동하고 할 듯, 이거만 했는데 좀 재밌네
+If you're going to use a database, ensure you have a local `.env` file that reads something like this:
 
-    - 알게 된 것
-    => 스프링 에서 새로 생성된 파일들은 빨간줄로 표시된다 - 에러인줄 알고 삽질함
-    => gitignore은 노란색으로 표시된다.
+```
+JDBC_DATABASE_URL=jdbc:postgresql://localhost:5432/java_database_name
+```
 
-### 21.11.13
+## Deploying to Heroku
 
-    공식 문서 보면서 진행 중, 언어 습득은 3일안에 끝내기
-    백엔드 개발은 7일 안에 어느정도 숙달 되게끔 하기
-    - https://kotlinlang.org/docs/basic-syntax.html
+```sh
+$ heroku create
+$ git push heroku master
+$ heroku open
+```
 
-### 21.11.19
+## Documentations
 
-    - application.yml 새롭게 생성
-    => docker, mariadb, spring boot 까지 연동 완료
+For more information about using Java and Kotlin on Heroku, see these Dev Center articles:
 
-    docker 명령어
-    1. docker exec -it todo /bin/bash
-    2. mysql -u root -p
-
-    docker 간단한 명령어 참고
-    - https://7942yongdae.tistory.com/130
-
-### 21.11.20
-
-    - 백엔드 완성
-    => Entity 생성, Column 설정
-    => CrudRepository를 사용하여 인터페이스 생성
-    => Sevice 생성, 삽입, 수정 삭제 등 여러가지 로직 작성
-    => Controller 생성, 각각에 해당하는 Mapping
-    
-### 21.11.27
-
-    - Heroku && kotlin rest api 성공
-    => 한 5일 삽질 했던 거 같은데 드디어 성공
-    => 문제는 뭔가 우리가 개발하려던 것과 버전이 안 맞는 거 같음
-    => build.gradle과 build.gradle.kts의 차이인데 이거 그냥 바꿔서 써도 되는건가?
+- [Java on Heroku](https://devcenter.heroku.com/categories/java)
