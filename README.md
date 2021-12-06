@@ -64,3 +64,8 @@
     - 11월 29일의 문제점 해결
     => 다른 사람 데모를 찾았음 아직 안해봤음
     => https://github.com/britter/spring-boot-heroku-demo
+    
+
+### 21.12.06
+
+    - 아 이거 안되는 거 같은데;;;
