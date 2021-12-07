@@ -58,3 +58,27 @@
 
     - 한 가지 문제
     => 코틀린의 버전이 조금 다른데...
+
+### 21.12.07
+
+- 진짜 끝 이제 안온다
+
+        - heroku로 rest api 만드는 법
+        1. 스프링 부트 프로젝트 생성
+        2. 해당 폴더로 이동해서 git init
+        3. heroku create -a "프로젝트 이름"
+        4. heroku git:remote -a "프로젝트 이름"
+        5. 소스코드 수정하기
+        5. Procfile 생성하기
+        web: java -jar build/libs/"프로젝트 이름"-0.0.1-SNAPSHOT.jar -Dserver.port=$PORT $JAR_OPTS
+
+        5. app.properties 수정
+        spring.datasource.driverClassName=org.mariadb.jdbc.Driver
+        spring.datasource.url=${JawsDB_URL}
+        spring.datasource.username=${JawsDB_USER}
+        spring.datasource.password=${JawsDB_PASSWORD}
+        server.port=${PORT:8080}
+
+        6. git add .
+        7. git commit -am "커밋 메시지"
+        8. git push heroku master
